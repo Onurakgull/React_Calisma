@@ -79,7 +79,7 @@ export default function IndexNavbar() {
             Design System React
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
-            Designed and Coded by Creative Tim
+            Designed and Coded by Onur Akgul
           </UncontrolledTooltip>
           <button
             aria-expanded={collapseOpen}
