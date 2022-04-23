@@ -69,17 +69,13 @@ export default function IndexNavbar() {
   const onCollapseExited = () => {
     setCollapseOut("");
   };
-  const scrollToDownload = () => {
-    document
-      .getElementById("download-section")
-      .scrollIntoView({ behavior: "smooth" });
-  };
+  
   return (
     <Navbar className={"fixed-top " + color} color-on-scroll="100" expand="lg">
       <Container>
         <div className="navbar-translate">
           <NavbarBrand to="/" tag={Link} id="navbar-brand">
-            <span>BLK• </span>
+            <span>O.A• </span>
             Design System React
           </NavbarBrand>
           <UncontrolledTooltip placement="bottom" target="navbar-brand">
@@ -190,19 +186,10 @@ export default function IndexNavbar() {
             </UncontrolledDropdown>
             <NavItem>
               <Button
-                className="nav-link d-none d-lg-block"
-                color="primary"
-                target="_blank"
-                href="#"
-              >
-                <i className="tim-icons icon-spaceship" /> Upgrade to PRO
-              </Button>
-            </NavItem>
-            <NavItem>
-              <Button
-                className="nav-link d-none d-lg-block"
+                clButtonssName="nav-link d-none d-lg-block"
                 color="default"
-                onClick={scrollToDownload}
+                target="_blank"
+                href="https://www.canva.com/design/DAEQMeXxpqA/EefsPBAx7uhpqMsymLvS2Q/view?utm_content=DAEQMeXxpqA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
               >
                 <i className="tim-icons icon-cloud-download-93" /> Download
               </Button>
