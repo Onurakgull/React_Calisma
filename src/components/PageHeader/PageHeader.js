@@ -18,9 +18,12 @@
 import React from "react";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Container, Button } from "reactstrap";
 
 export default function PageHeader() {
+
+  const text = " React ile yapılmış bir template kullanılmıştır. Üzerinde çalışmalar yapmaktayım.";
+
   return (
     <div className="page-header header-filter">
       <div className="squares square1" />
@@ -34,7 +37,17 @@ export default function PageHeader() {
         <div className="content-center brand">
           <h1 className="h1-seo">@Onur Akgül</h1>
           <h3 className="d-none d-sm-block">
-            React ile yapılmış bir template kullanılmıştır. Üzerinde çalışmalar yapmaktayım. 
+            <span>
+                {text.substring(0,35).trim()}...
+            </span>
+            <br/>
+            <br/>
+            <Button color="primary" type="button">
+              Detay Bilgi
+              <i className="tim-icons icon-minimal-right" />
+              <i className="tim-icons icon-minimal-right" />
+              <i className="tim-icons icon-minimal-right" />
+            </Button>
           </h3>
         </div>
       </Container>
