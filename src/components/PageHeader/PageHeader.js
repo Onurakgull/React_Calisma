@@ -22,6 +22,7 @@ import { Container, Button } from "reactstrap";
 
 export default function PageHeader() {
 
+
   const text = " React ile yapılmış bir template kullanılmıştır. Üzerinde çalışmalar yapmaktayım.";
 
   return (
